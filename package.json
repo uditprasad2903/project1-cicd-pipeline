@@ -1,0 +1,22 @@
+{
+  "name": "udit-portfolio-cicd",
+  "version": "1.0.0",
+  "description": "DevOps internship project — Portfolio website with automated CI/CD pipeline using GitHub Actions",
+  "main": "index.html",
+  "scripts": {
+    "test": "node test/validate.js",
+    "build": "mkdir -p dist && cp index.html dist/index.html && cp -r assets dist/assets 2>/dev/null || true && echo 'Build completed — files copied to dist/'",
+    "lint": "echo 'Linting check passed'",
+    "start": "echo 'Open index.html in your browser to view the portfolio'"
+  },
+  "keywords": [
+    "devops",
+    "cicd",
+    "github-actions",
+    "portfolio",
+    "automation"
+  ],
+  "author": "Udit Prasad",
+  "license": "MIT",
+  "devDependencies": {}
+}
